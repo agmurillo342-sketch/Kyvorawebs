@@ -3,11 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nombre del Proyecto</title>
+  <meta name="description" content="CreaWeb Studio diseña páginas web personalizadas para hacer crecer tu negocio.">
+  <title>CreaWeb Studio | Páginas web personalizadas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hola mundo</h1>
-  <script src="script.js"></script>
+  <header class="site-header">
+    <a class="logo" href="#inicio">CreaWeb<span>.</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav">
+      <a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#planes">Planes</a><a href="#portafolio">Portafolio</a><a href="#opiniones">Opiniones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Diseño web personalizado</p>
+        <h1>Tu negocio merece una <em>web profesional</em></h1>
+        <p class="hero-copy">Cuéntanos qué haces, elige tus colores y secciones, sube tus fotos y recibe tu página web lista en tiempo récord. Sin complicaciones, a tu medida.</p>
+        <div class="button-row"><a class="button button-primary configurator-trigger" href="#configurador">Crear mi web ahora <b>→</b></a><a class="button button-outline" href="https://wa.me/523222085916" target="_blank" rel="noreferrer">◉ &nbsp;Hablar por WhatsApp</a></div>
+        <div class="stats"><div><strong>150+</strong><span>Webs entregadas</span></div><div><strong>4.9★</strong><span>Valoración media</span></div><div><strong>5 días</strong><span>Entrega exprés</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="section-heading"><p class="eyebrow">Servicios</p><h2>Todo lo que tu negocio necesita <em>en internet</em></h2></div>
+      <div class="service-grid">
+        <article class="service-card"><i>✦</i><h3>Páginas web</h3><p>Sitios completos y elegantes para presentar tu negocio de forma profesional.</p></article>
+        <article class="service-card"><i>◈</i><h3>Tiendas online</h3><p>Vende tus productos por internet con carrito, pagos y panel de administración.</p></article>
+        <article class="service-card"><i>◎</i><h3>Landing pages</h3><p>Páginas de captura enfocadas en convertir visitantes en clientes.</p></article>
+        <article class="service-card"><i>✎</i><h3>Diseño de marca</h3><p>Logotipo e identidad visual para que tu negocio se vea coherente.</p></article>
+        <article class="service-card"><i>⌕</i><h3>Optimización SEO</h3><p>Aparece en Google con contenido optimizado para que te encuentren.</p></article>
+        <article class="service-card"><i>↻</i><h3>Mantenimiento</h3><p>Actualizaciones y soporte continuo para que tu web siempre funcione.</p></article>
+      </div>
+    </section>
+
+    <section class="section process-section" id="proceso">
+      <div class="section-heading"><p class="eyebrow">Cómo funciona</p><h2>De la idea a tu web <em>en 4 pasos</em></h2></div>
+      <div class="process-grid">
+        <article><div class="step-icon">01</div><h3>Cuéntanos de tu negocio</h3><p>Nombre, descripción, servicios y datos de contacto. Todo desde un formulario sencillo.</p></article>
+        <article><div class="step-icon">02</div><h3>Personaliza tu web</h3><p>Elige colores, estilo y las secciones que quieres. Sube tu logo y tus fotos.</p></article>
+        <article><div class="step-icon">03</div><h3>Recibe tu propuesta</h3><p>Todo llega directo a nuestro WhatsApp y te respondemos con el presupuesto.</p></article>
+        <article><div class="step-icon">04</div><h3>Publicamos tu web</h3><p>Construimos tu página y la dejamos en línea, lista para recibir clientes.</p></article>
+      </div>
+      <a class="text-link" href="https://wa.me/523222085916" target="_blank" rel="noreferrer">Empezar paso 1 →</a><small>Gratis y sin compromiso.</small>
+    </section>
+
+    <section class="section plans-section" id="planes">
+      <div class="section-heading"><p class="eyebrow">Planes</p><h2>Precios claros, <em>sin sorpresas</em></h2><p>Elige el plan que mejor se adapte a tu negocio. El precio final depende de lo que necesites y lo confirmamos por WhatsApp.</p></div>
+      <div class="plans-grid">
+        <article class="plan"><h3>Esencial</h3><strong>Desde $1,999</strong><p>Perfecto para negocios que necesitan presencia profesional en internet.</p><ul><li>Hasta 4 secciones</li><li>Diseño responsive</li><li>Formulario de contacto</li><li>Enlace a WhatsApp</li><li>Entrega en 2 días hábiles</li></ul><a href="https://wa.me/523222085916" target="_blank" rel="noreferrer">Solicitar plan</a></article>
+        <article class="plan featured"><span class="badge">Más elegido</span><h3>Profesional</h3><strong>Desde $3,999</strong><p>Para marcas que quieren destacar con una web completa y optimizada.</p><ul><li>Hasta 7 secciones</li><li>Galería y portafolio</li><li>Optimización SEO</li><li>Conectar redes sociales</li><li>Mapa de ubicación</li><li>Entrega en 24 horas</li></ul><a href="https://wa.me/523222085916" target="_blank" rel="noreferrer">Solicitar plan</a></article>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portafolio"><div class="section-heading"><p class="eyebrow">Portafolio</p><h2>Proyectos que nos <em>enorgullecen</em></h2></div><div class="portfolio-grid">
+      <a class="portfolio-project" href="https://www.lasgueras.espace/" target="_blank" rel="noopener noreferrer"><article><img src="assets/las-gueras-logo.png" alt="Logo de Restaurante Las Güeras"><span>Restaurante</span><h3>Las Güeras</h3></article></a>
+      <a class="portfolio-project" href="https://bungalows-del-mar.vercel.app/" target="_blank" rel="noopener noreferrer"><article><img src="assets/bungalows-del-mar-logo.jpg" alt="Logo de Bungalows del Mar"><span>Alojamiento</span><h3>Bungalows del Mar</h3></article></a>
+    </div></section>
+
+    <section class="section testimonials" id="opiniones"><div class="section-heading"><p class="eyebrow">Opiniones</p><h2>Lo que dicen <em>nuestros clientes</em></h2></div><div class="testimonial-grid">
+      <figure><div class="quote">“</div><blockquote>Me encantó lo fácil que fue. Llené el formulario, elegí mis colores y en una semana ya tenía mi página en línea. ¡Ahora me llegan clientes por internet!</blockquote><figcaption>María Fernanda <small>Dueña de restaurante</small></figcaption></figure>
+      <figure><div class="quote">“</div><blockquote>No sabía nada de diseño web y aun así quedó perfecta. El proceso por WhatsApp fue muy cercano y el resultado superó lo que esperaba.</blockquote><figcaption>Carlos Restrepo <small>Emprendedor</small></figcaption></figure>
+      <figure><div class="quote">“</div><blockquote>La tienda online me cambió el negocio. Ahora vendo por internet con pagos en línea y todo funciona sin problemas.</blockquote><figcaption>Laura Gómez <small>Fundadora de tienda de moda</small></figcaption></figure>
+    </div></section>
+    <section class="cta"><p class="eyebrow">Tu próximo proyecto</p><h2>¿Listo para lanzar <em>tu web?</em></h2><p>Toma el control: personaliza tu web ahora mismo y recibe tu propuesta directamente en WhatsApp.</p><a class="button button-primary configurator-trigger" href="#configurador">Crear mi web gratis →</a></section>
+  </main>
+  <footer><div><a class="logo" href="#inicio">CreaWeb<span>.</span></a><p>Tu página web, hecha a tu medida. Diseñamos páginas web personalizadas que hacen crecer tu negocio.</p></div><div><h4>Navegación</h4><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#planes">Planes</a><a href="#portafolio">Portafolio</a></div><div><h4>Contacto</h4><a href="https://wa.me/523222085916">322 208 5916</a><a href="mailto:webs.gomez0@gmail.com">webs.gomez0@gmail.com</a></div><div><h4>Empieza hoy</h4><p>Cuéntanos sobre tu negocio y arma tu web en minutos.</p><a class="footer-button" href="https://wa.me/523222085916">Crear mi web →</a></div><div class="copyright">© 2026 CreaWeb Studio. Todos los derechos reservados.</div></footer>
+  <script src="script.js" defer></script>
+
+  <div class="configurator" id="configurador" aria-hidden="true" role="dialog" aria-labelledby="config-title">
+    <div class="config-panel">
+      <button class="config-close" aria-label="Cerrar configurador">×</button>
+      <div class="config-progress"><span class="progress-step active">1</span><i></i><span class="progress-step">2</span><i></i><span class="progress-step">3</span><i></i><span class="progress-step">4</span><i></i><span class="progress-step">5</span></div>
+      <form id="web-form">
+        <fieldset class="config-step active">
+          <p class="eyebrow">Paso 1 de 5</p><h2 id="config-title">Elige tu plan</h2><p class="config-intro">Selecciona el plan que mejor se adapte a lo que necesitas para tu negocio.</p>
+          <div class="plan-options"><label class="plan-option"><input type="radio" name="plan" value="Esencial" data-max-sections="4" required><strong>Esencial</strong><b>$1,999</b><small>Hasta 4 secciones · Entrega en 2 días hábiles</small></label><label class="plan-option featured-option"><input type="radio" name="plan" value="Profesional" data-max-sections="7" required><strong>Profesional <em>Más elegido</em></strong><b>$3,999</b><small>Hasta 7 secciones · Entrega en 24 horas</small></label></div>
+        </fieldset>
+        <fieldset class="config-step">
+          <p class="eyebrow">Paso 2 de 5</p><h2>Cuéntanos de tu negocio</h2><p class="config-intro">Comencemos con la información básica para conocer tu proyecto.</p>
+          <label>Nombre del negocio<input name="business" required placeholder="Ej. Café Central"></label>
+          <label>¿A qué se dedica tu negocio?<textarea name="description" required placeholder="Cuéntanos brevemente qué haces..."></textarea></label>
+          <label>¿Tienes logo? <select name="logo"><option>Sí, ya tengo logo</option><option>No, necesito diseñarlo</option><option>Está en proceso</option></select></label>
+        </fieldset>
+        <fieldset class="config-step">
+          <p class="eyebrow">Paso 3 de 5</p><h2>¿Qué secciones quieres?</h2><p class="config-intro">Marca las secciones que quieres incluir en tu página web. Tu plan permite hasta <strong id="section-limit">4</strong> secciones.</p>
+          <div class="choice-grid"><label class="choice"><input type="checkbox" name="sections" value="Inicio" checked><b>⌂</b><strong>Inicio</strong><small>Portada con título y botones de acción.</small></label><label class="choice"><input type="checkbox" name="sections" value="Sobre nosotros"><b>◉</b><strong>Sobre nosotros</strong><small>La historia de tu negocio y qué te hace diferente.</small></label><label class="choice"><input type="checkbox" name="sections" value="Servicios" checked><b>✦</b><strong>Servicios</strong><small>Los productos o servicios que ofreces.</small></label><label class="choice"><input type="checkbox" name="sections" value="Galería"><b>▧</b><strong>Galería</strong><small>Una vitrina visual con tus mejores fotos.</small></label><label class="choice"><input type="checkbox" name="sections" value="Testimonios"><b>❞</b><strong>Testimonios</strong><small>Opiniones de tus clientes para generar confianza.</small></label><label class="choice"><input type="checkbox" name="sections" value="Contacto" checked><b>✉</b><strong>Contacto</strong><small>Formulario, teléfono y WhatsApp.</small></label><label class="choice"><input type="checkbox" name="sections" value="Ubicación"><b>⌖</b><strong>Ubicación</strong><small>Mapa con la dirección de tu negocio.</small></label></div>
+        </fieldset>
+        <fieldset class="config-step">
+          <p class="eyebrow">Paso 4 de 5</p><h2>Personaliza el estilo</h2><p class="config-intro">Elige la personalidad visual que más representa a tu marca.</p>
+          <div class="style-options"><label class="style-choice selected"><input type="radio" name="style" value="Elegante y editorial" checked><span class="style-preview elegant">Aa</span><strong>Elegante y editorial</strong><small>Serif, sofisticado y atemporal</small></label><label class="style-choice"><input type="radio" name="style" value="Moderno y vibrante"><span class="style-preview modern">Aa</span><strong>Moderno y vibrante</strong><small>Colorido, directo y energético</small></label><label class="style-choice"><input type="radio" name="style" value="Minimalista y limpio"><span class="style-preview minimal">Aa</span><strong>Minimalista y limpio</strong><small>Simple, claro y funcional</small></label></div>
+          <label>Colores que te gustaría usar<input name="colors" placeholder="Ej. Negro, coral y crema"></label>
+        </fieldset>
+        <fieldset class="config-step">
+          <p class="eyebrow">Paso 5 de 5</p><h2>¿Cómo te contactamos?</h2><p class="config-intro">Te enviaremos una propuesta personalizada sin compromiso.</p>
+          <label>Tu nombre<input name="name" required placeholder="Nombre completo"></label><label>Tu WhatsApp<input name="phone" required type="tel" placeholder="322 208 5916"></label><label>Correo electrónico<input name="email" type="email" placeholder="tu@email.com"></label><label>Cuéntanos algo más<textarea name="notes" placeholder="¿Tienes alguna idea especial?"></textarea></label>
+        </fieldset>
+        <div class="config-actions"><button type="button" class="config-back">← Atrás</button><button type="button" class="config-next button button-primary">Continuar →</button></div>
+      </form>
+      <div class="config-success"><div class="success-mark">✓</div><h2>¡Tu propuesta está lista!</h2><p>Abre WhatsApp para enviarnos tus preferencias. Te responderemos con una propuesta personalizada.</p><a class="button button-primary whatsapp-submit" target="_blank" rel="noreferrer">Enviar por WhatsApp →</a></div>
+    </div>
+  </div>
 </body>
 </html>
