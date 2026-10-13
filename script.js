@@ -69,8 +69,22 @@ nextButton.addEventListener('click', () => {
   if (!form.checkValidity()) { form.reportValidity(); return; }
   const data = new FormData(form);
   const sections = data.getAll('sections').join(', ');
-  const message = `Hola, quiero crear mi web.%0A%0APlan: ${data.get('plan')}%0ANegocio: ${data.get('business')}%0ADescripción: ${data.get('description')}%0ASecciones: ${sections}%0AEstilo: ${data.get('style')}%0AColores: ${data.get('colors') || 'Por definir'}%0AContacto: ${data.get('name')} - ${data.get('phone')}%0AEmail: ${data.get('email') || 'No indicado'}%0ANotas: ${data.get('notes') || 'Ninguna'}`;
-  document.querySelector('.whatsapp-submit').href = `https://wa.me/523222085916?text=${message}`;
+  const message = [
+    'Hola, quiero crear mi web.',
+    '',
+    `Plan: ${data.get('plan')}`,
+    `Negocio: ${data.get('business')}`,
+    `Descripción: ${data.get('description')}`,
+    `Secciones: ${sections}`,
+    `Estilo: ${data.get('style')}`,
+    `Colores: ${data.get('colors') || 'Por definir'}`,
+    `Contacto: ${data.get('name')} - ${data.get('phone')}`,
+    `Email: ${data.get('email') || 'No indicado'}`,
+    `Notas: ${data.get('notes') || 'Ninguna'}`
+  ].join('\n');
+  const whatsappUrl = new URL('https://wa.me/523222085916');
+  whatsappUrl.searchParams.set('text', message);
+  document.querySelector('.whatsapp-submit').href = whatsappUrl.toString();
   form.style.display = 'none';
   document.querySelector('.config-progress').style.display = 'none';
   success.classList.add('show');
@@ -89,3 +103,4 @@ function updateSectionLimit() {
 
 planInputs.forEach((input) => input.addEventListener('change', updateSectionLimit));
 sectionInputs.forEach((input) => input.addEventListener('change', updateSectionLimit));
+
